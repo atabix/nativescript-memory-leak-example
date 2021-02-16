@@ -1,6 +1,7 @@
 # NativeScript Memory Leak Example
-This repository serves to provide a reproduceable memory leak that occurs when navigating to another page.
+This repository serves as an example for https://github.com/NativeScript/ns-v8ios-runtime/issues/105 to provide a reproduceable memory leak that occurs when navigating to another page.
 In this example we navigate with a 1 second timeout to the same page in an endless loop.
+
 
 ## Use Case #1
 Run the app with all of the same dependencies with one exception:

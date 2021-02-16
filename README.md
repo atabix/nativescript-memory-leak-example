@@ -19,4 +19,6 @@ The app starts around ~74MB in both uses cases. In this first couple of minutes 
 
 After this initial period the memory seems to stabilize at around 93MB.
 
-The same test has been applied to another app in production with pages that are more complex. This example here resulted in 1MB increments. The production app resulted in 50MB increments. In combination with navigating between different kinds of pages this memory problem is compounded, eventually resulting in the app shutting itself down.
+The same test has been applied to two very different apps in production with pages that are more complex. This example here resulted in 1MB increments. The production apps resulted in 50MB increments. In combination with navigating between different kinds of pages this memory problem is compounded, eventually resulting in the app shutting itself down.
+
+This behavior remained consistent when manually calling `Utils.GC()` and using `clearHistory: true` on navigation.
